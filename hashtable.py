@@ -30,7 +30,7 @@ class HashTable(object):
         Worst case: O(n) under what conditions? [load factor is exceeded and
         hash table must resize]"""
         # TODO: Calculate load factor
-        factor = self.size/self.buckets
+        factor = self.size/len(self.buckets)
         return factor
 
     def keys(self):
